@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Agnes HTML Exercises</title>
+<meta charset="UTF-8">
+</head>
+
+<body style="background-color:#fce2b3;">
+<h1 style="text-align:center;">Welcome!</h1>
+
+<h2>Form Elements Exercises</h2>
+
+<h3>Form Action</h3>
+<form action="/action_page.php">
+ <label for="fname">First Name:</label>
+ <input type="text" id="fname" name="fname"><br><br>
+ <label for="lname">Last Name:</label>
+ <input type="text" id="lname" name="lname"><br><br>
+ <input type="submit" value="Submit">
+ </form>
+ <br><br>
+ <h3>Droplist (with optbox)</h3>
+<form action="/action_page.php">
+<label for ="characters">Choose a character:</label>
+<select name="characters" id="characters">
+ <optgroup label="Moomins">
+ <option value="Moomin">Moomin</option>
+ <option value="Moominpapa">Moominpapa</option>
+ <option value="Moominmama">Moominmama</option>
+ <optgroup label="Others">
+ <option value="Snorkmaiden">Snorkmaiden</option>
+ <option value="LittleMy">Little My</option>
+</select><br><br>
+ <input type="submit" value="Submit">
+ </form>
+<br><br>
+<h3>Droplist with multiple selections</h3>
+<form action="/action_page.php">
+<label for ="characters">Choose a character:</label>
+<select name="characters" id="characters" size="4" multiple>
+ <option value="Moomin">Moomin</option>
+ <option value="Snufkin">Snufkin</option>
+ <option value="Snorkmaiden">Snorkmaiden</option>
+ <option value="LittleMy">Little My</option>
+ <option value="Moominpapa">Moominpapa</option>
+ <option value="Moominmama">Moominmama</option>
+ <option value="Snork">Snork</option>
+</select><br><br>
+ <input type="submit" value="Submit">
+ </form>
+ 
+ <p><i>To select multiple options from the list, hold down the CTRL / COMMAND button.</i></p>
+ <br><br>
+ <h3>Textarea / Input field</h3>
+ <form action="/action_page.php">
+<textarea name="message" rows="5" cols="30">Write something here and then submit it!</textarea>
+<br><br>
+ <input type="submit" value="Submit">
+ </form>
+ <br><br>
+  <h3>Button</h3>
+ 
+ <button type="button" onclick="alert('Hi there! Now press OK')">Click here!</button>
+ <br><br><br>
+ <h3>Using Fieldset, Legend and Checkbox</h3>
+  <form action="/action_page.php">
+<fieldset>
+<legend>Personal Information:</legend>
+<label for="fname">First Name:</label><br>
+<input type="text" id="fname" name ="fname" value="write your first name here."><br>
+<label for="fname">Last Name:</label><br>
+<input type="text" id="lname" name ="lname" value="write your last name here."><br>
+<label for="fname">Born in:</label><br>
+<input type="date" id="byear" name ="byear" value="when were you born?"><br>
+<p>Gender:</p>
+<input type="checkbox" id="wman" name ="wman" value="Woman">
+<label for="wman">Woman</label>
+<input type="checkbox" id="man" name ="man" value="Man">
+<label for="man">Man</label>
+<input type="checkbox" id="otherg" name ="otherg" value="Other Gender">
+<label for="otherg">Other</label>
+<br><br>
+ <input type="submit" value="Submit">
+ </fieldset>
+</form>
+<br><br>
+ <h3>Radio Buttons</h3>
+  <form>
+  <input type="radio" id="moomin" name="fav_character" value="Moomin">
+  <label for="html">Moomin</label><br>
+  <input type="radio" id="moominmama" name="fav_character" value="Moominmama">
+  <label for="html">Moominmama</label><br>
+  <input type="radio" id="moominpapa" name="fav_character" value="Moominpapa">
+  <label for="html">Moominpapa</label>
+  <br><br>
+  <input type="submit" value="Submit">
+  </form>
+  <br><br>
+  
+  <h3>Target</h3>
+  <p>Opens a new tab when submitting it.</p>
+ <form action="/action_page.php" target="_blank">
+ <label for="fname">First Name:</label>
+ <input type="text" id="fname" name="fname"><br><br>
+ <label for="lname">Last Name:</label>
+ <input type="text" id="lname" name="lname"><br><br>
+ <input type="submit" value="Submit">
+ </form>
+ <br><br>
+ 
+ <h3>GET and POST</h3>
+ <p>Using the <b>GET</b> method:</p>
+ <form action="/action_page.php" target="_blank" method="get">
+ <label for="fname">First Name:</label>
+ <input type="text" id="fname" name="fname"><br><br>
+ <label for="lname">Last Name:</label>
+ <input type="text" id="lname" name="lname"><br><br>
+ <input type="submit" value="Submit (GET)">
+ </form>
+ <br>
+ <p>Using the <b>POST</b> method:</p>
+ <form action="/action_page.php" target="_blank" method="post">
+ <label for="fname">First Name:</label>
+ <input type="text" id="fname" name="fname"><br><br>
+ <label for="lname">Last Name:</label>
+ <input type="text" id="lname" name="lname"><br><br>
+ <input type="submit" value="Submit (POST)">
+ </form>
+  
+</body>
+</html>
